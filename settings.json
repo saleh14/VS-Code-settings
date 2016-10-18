@@ -1,0 +1,41 @@
+// Place your settings in this file to overwrite the default settings
+{
+ "vim.useCtrlKeys": true,
+    "editor.fontSize": 18,
+    "vim.insertModeKeyBindings": [
+       {
+           "before": ["A","A"],
+           "after": ["<Esc>","A"]
+       },{
+           "before": ["I","I"],
+           "after": ["<Esc>","I"]
+       },{
+
+           "before": ["ctrl+shift+d"],
+           "after": ["<Esc>","h","i"]
+       },{
+           "before": ["S", "S"],
+           "after": ["<Esc>","S"]
+       },
+       {
+           "before": ["C", "C"],
+           "after": ["<Esc>","l","c","a","w"]
+       },
+       {
+           "before": ["P", "P"],
+           "after": ["<Esc>","p","i"]
+       },
+       {
+           "before": ["U", "U"],
+           "after": ["<Esc>","u","i"]
+       },
+       {
+           "before": ["L", "L"],
+           "after": ["<Esc>","h","g","~","i","w","e","a"]
+       }
+
+
+
+
+    ] 
+}

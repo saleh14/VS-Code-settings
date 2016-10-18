@@ -1,0 +1,62 @@
+
+[
+    {
+      "key": "ctrl+r",
+      "command": "extension.vim_ctrl+r",
+      "when": "editorTextFocus"
+    },
+    {
+      "key": "ctrl+h", "command": "extension.vim_backspace", 
+      "when": "editorTextFocus && !inDebugRepl"
+    },
+    {
+      "key": "ctrl+m",
+      "command": "editor.action.insertLineAfter",
+      "when": "editorTextFocus && vim.mode == 'Insert Mode'"
+    }, 
+    {
+      "key": "ctrl+'", "command": "workbench.action.terminal.toggleTerminal" 
+    },
+    {
+      "key": "ctrl+shift+'",          
+      "command": "workbench.action.terminal.new" 
+    },
+    { "key": "ctrl+k ctrl+p",          "command": "workbench.action.showCommands" },
+
+    { 
+      "key": "ctrl+j",                
+      "command": "cursorDown",
+      "when": "editorTextFocus && vim.mode =='Insert Mode'"
+    },
+    { 
+      "key": "ctrl+k",                
+      "command": "cursorUp",
+      "when": "editorTextFocus && vim.mode =='Insert Mode'"
+    }, 
+ 
+    { 
+      "key": "ctrl+f",                
+      "command": "cursorWordRight",
+      "when": "editorTextFocus && vim.mode =='Insert Mode'"
+    },   
+    
+
+    { 
+      "key": "ctrl+b",                
+      "command": "cursorWordLeft",
+      "when": "editorTextFocus && vim.mode =='Insert Mode'"
+    },   
+    
+    { 
+      "key": "alt+h",                
+      "command": "cursorLeft",
+      "when": "editorTextFocus && vim.mode =='Insert Mode'"
+    },
+    { 
+      "key": "alt+f",                
+      "command": "cursorRight",
+      "when": "editorTextFocus && vim.mode =='Insert Mode'"
+    }
+  ]
+  
+  
