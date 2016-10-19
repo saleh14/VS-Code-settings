@@ -1,0 +1,26 @@
+// Place your key bindings in this file to overwrite the defaults
+[{
+        "key": "ctrl+h",
+        "command": "deleteLeft",
+        "when": "editorTextFocus && vim.useCtrlKeys && !inDebugRepl && vim.mode == 'Insert Mode'"
+    },
+    {
+        "key": "ctrl+shift+'",
+        "command": "workbench.action.terminal.new"
+    },
+
+    {
+        "key": "ctrl+'",
+        "command": "workbench.action.terminal.toggleTerminal"
+    },
+
+    {
+        "key": "ctrl+k ctrl+p",
+        "command": "workbench.action.showCommands"
+    },
+    {
+        "key": "ctrl+m",
+        "command": "editor.action.insertLineAfter",
+        "when": "editorTextFocus && vim.useCtrlKeys &&  vim.mode == 'Insert Mode'"
+    }
+    ]
