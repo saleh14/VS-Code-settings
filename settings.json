@@ -1,117 +1,51 @@
 // Place your settings in this file to overwrite the default settings
 {
+    "vim.useCtrlKeys": true,
+    "vim.easymotion": true,
     "editor.fontFamily": "Fira Code",
     "editor.fontSize": 14,
     "editor.fontLigatures": true,
-    "vim.easymotion": true,
-    "vim.otherModesKeyBindings": [
+    "vim.insertModeKeyBindings": [{
+            "before": ["A", "A"],
+            "after": ["<Esc>", "A"]
+        }, {
+            "before": ["I", "I"],
+            "after": ["<Esc>", "I"]
+        }, {
+
+            "before": ["ctrl+shift+d"],
+            "after": ["<Esc>", "h", "i"]
+        }, {
+            "before": ["S", "S"],
+            "after": ["<Esc>", "S"]
+        },
         {
-            "before": [
-                ","
-            ],
-            "after": [
-                "<Esc>",
-                "\\",
-                "\\",
-                "s"
-            ]
+            "before": ["C", "C"],
+            "after": ["<Esc>", "l", "c", "a", "w"]
+        },
+        {
+            "before": ["P", "P"],
+            "after": ["<Esc>", "p", "i"]
+        },
+        {
+            "before": ["U", "U"],
+            "after": ["<Esc>", "u", "i"]
+        },
+        {
+            "before": ["L", "L"],
+            "after": ["<Esc>", "h", "g", "~", "i", "w", "e", "a"]
+        },
+        {
+            "before": ["ctrl+,"],
+            "after": ["<Esc>", "\\", "\\", "s"]
         }
+
+
+
     ],
-    "vim.insertModeKeyBindings": [
-        {
-            "before": [
-                "A",
-                "A"
-            ],
-            "after": [
-                "<Esc>",
-                "A"
-            ]
-        },
-        {
-            "before": [
-                "I",
-                "I"
-            ],
-            "after": [
-                "<Esc>",
-                "I"
-            ]
-        },
-        {
-            "before": [
-                "ctrl+shift+d"
-            ],
-            "after": [
-                "<Esc>",
-                "h",
-                "i"
-            ]
-        },
-        {
-            "before": [
-                "S",
-                "S"
-            ],
-            "after": [
-                "<Esc>",
-                "S"
-            ]
-        },
-        {
-            "before": [
-                "C",
-                "C"
-            ],
-            "after": [
-                "<Esc>",
-                "h",
-                "e",
-                "b",
-                "c",
-                "e"
-            ]
-        },
-        {
-            "before": [
-                "P",
-                "P"
-            ],
-            "after": [
-                "<Esc>",
-                "h",
-                "p",
-                "i"
-            ]
-        },
-        {
-            "before": [
-                "U",
-                "U"
-            ],
-            "after": [
-                "<Esc>",
-                "u",
-                "i"
-            ]
-        },
-        {
-            "before": [
-                "L",
-                "L"
-            ],
-            "after": [
-                "<Esc>",
-                "h",
-                "g",
-                "~",
-                "i",
-                "w",
-                "e",
-                "a"
-            ]
-        }
-    ],
-    "window.zoomLevel": 0,
+    "vim.otherModesKeyBindings": [{
+        "before": [","],
+        "after": ["\\", "\\", "s"]
+    }],
     "editor.cursorStyle": "block"
 }

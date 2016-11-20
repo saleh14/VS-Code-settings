@@ -1,5 +1,5 @@
-[
-    {
+// Place your key bindings in this file to overwrite the defaults
+[{
         "key": "ctrl+r",
         "command": "extension.vim_ctrl+r",
         "when": "editorTextFocus"
@@ -97,9 +97,15 @@
         "when": "terminalFocus"
     },
     {
-        "key": "ctrl+]",
-        "command": "workbench.action.terminal.focus",
-        "when": "!terminalFocus"
+        "key": "ctrl+k f",
+        "command": "editor.action.openLink",
+        "when": "editorFocus && vim.mode =='Normal Mode'"
+    },
+    {
+        "key": "ctrl+k m",
+        "command": "workbench.action.maximizeEditor",
+        "when": "editorFocus && vim.mode =='Normal Mode'"
     }
-   
+
+    // 
 ]
