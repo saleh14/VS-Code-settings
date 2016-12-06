@@ -36,16 +36,40 @@
             "after": ["<Esc>", "h", "g", "~", "i", "w", "e", "a"]
         },
         {
-            "before": ["ctrl+,"],
-            "after": ["<Esc>", "\\", "\\", "s"]
+            "before": ["j", "j"],
+            "after": ["<Esc>"]
         }
-
-
-
     ],
-    "vim.otherModesKeyBindings": [{
+    "vim.otherModesKeyBindingsNonRecursive": [{
         "before": [","],
         "after": ["\\", "\\", "s"]
+    }, {
+        "before": [" ", "b"],
+        "after": ["\\", "\\", "b"]
+    }, {
+        "before": [" ", "w"],
+        "after": ["\\", "\\", "w"]
     }],
+    "terminal.integrated.commandsToSkipShell": [
+        // "editor.action.toggleTabFocusMode",
+        "workbench.action.quickOpen",
+        "workbench.action.showCommands",
+        "workbench.action.terminal.clear",
+        "workbench.action.terminal.copySelection",
+        "workbench.action.terminal.focus",
+        "workbench.action.terminal.focusNext",
+        "workbench.action.terminal.focusPrevious",
+        "workbench.action.terminal.kill",
+        "workbench.action.terminal.new",
+        "workbench.action.terminal.paste",
+        "workbench.action.terminal.runSelectedText",
+        "workbench.action.terminal.scrollDown",
+        "workbench.action.terminal.scrollDownPage",
+        "workbench.action.terminal.scrollUp",
+        "workbench.action.terminal.scrollUpPage",
+        "workbench.action.terminal.toggleTerminal"
+    ],
+
+
     "editor.cursorStyle": "block"
 }
