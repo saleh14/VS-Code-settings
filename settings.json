@@ -51,7 +51,6 @@
         "after": ["\\", "\\", "w"]
     }],
     "terminal.integrated.commandsToSkipShell": [
-        // "editor.action.toggleTabFocusMode",
         "workbench.action.quickOpen",
         "workbench.action.showCommands",
         "workbench.action.terminal.clear",
