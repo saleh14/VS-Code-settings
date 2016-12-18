@@ -10,6 +10,12 @@
     },
     {
         "key": "ctrl+m",
+        "command": "type",
+        "args": { "text": "\n" },
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+m",
         "command": "editor.action.insertLineAfter",
         "when": "editorTextFocus && vim.mode == 'Insert Mode'"
     },
