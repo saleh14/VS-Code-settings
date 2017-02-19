@@ -77,7 +77,6 @@
         "workbench.action.terminal.toggleTerminal"
     ],
 
-
     "editor.cursorStyle": "block",
     "window.zoomLevel": 0,
     "workbench.activityBar.visible": false

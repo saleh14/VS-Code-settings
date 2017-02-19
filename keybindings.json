@@ -10,6 +10,12 @@
     },
     {
         "key": "ctrl+m",
+        "command": "type",
+        "args": { "text": "\n" },
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+m",
         "command": "editor.action.insertLineAfter",
         "when": "editorTextFocus && vim.mode == 'Insert Mode'"
     },
@@ -113,6 +119,7 @@
         "key": "ctrl+k m",
         "command": "workbench.action.maximizeEditor",
         "when": "editorFocus && vim.mode =='Normal Mode'"
+
     },
     {
         "key": "ctrl+p",
@@ -139,7 +146,4 @@
         "when": "inQuickOpen"
     }
 
-
-
-    // 
 ]
