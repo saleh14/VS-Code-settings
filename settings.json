@@ -2,7 +2,7 @@
 {
     "vim.useCtrlKeys": true,
     "vim.easymotion": true,
-    "editor.fontFamily": "Consolas",
+    "editor.fontFamily": "'Fira Code',Consolas",
     "editor.fontSize": 16,
     "editor.fontLigatures": true,
     "vim.insertModeKeyBindings": [{
@@ -38,8 +38,16 @@
         {
             "before": ["j", "j"],
             "after": ["<Esc>"]
+        },
+        {
+            "before": ["ctrl+k", "ctrl+p"],
+            "after": ["<Esc>", "ctrl+k", "ctrl+p", "i"]
         }
+
+
     ],
+    "vim.insertModeKeyBindingsNonRecursive": [],
+
     "vim.otherModesKeyBindingsNonRecursive": [{
         "before": [","],
         "after": ["\\", "\\", "s"]
@@ -70,5 +78,7 @@
     ],
 
 
-    "editor.cursorStyle": "block"
+    "editor.cursorStyle": "block",
+    "window.zoomLevel": 0,
+    "workbench.activityBar.visible": false
 }
