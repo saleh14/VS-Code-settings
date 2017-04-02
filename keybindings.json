@@ -122,6 +122,17 @@
 
     },
     {
+        "key": "ctrl+j",
+        "command": "selectNextSuggestion",
+        "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "selectPrevSuggestion",
+        "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+    },
+
+    {
         "key": "ctrl+p",
         "command": ""
     },
@@ -135,7 +146,12 @@
         "command": "workbench.action.closeQuickOpen",
         "when": "inQuickOpen"
     },
+
     {
+        "key": "ctrl+m",
+        "command": "workbench.action.acceptSelectedQuickOpenItem",
+        "when": "inQuickOpen"
+    } {
         "key": "ctrl+j",
         "command": "workbench.action.quickOpenNavigateNext",
         "when": "inQuickOpen"
