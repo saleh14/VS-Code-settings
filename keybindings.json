@@ -1,0 +1,166 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+    {
+        "key": "ctrl+r",
+        "command": "extension.vim_ctrl+r",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "extension.vim_backspace",
+        "when": "editorTextFocus && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+m",
+        "command": "type",
+        "args": {
+            "text": "\n"
+        },
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+m",
+        "command": "editor.action.insertLineAfter",
+        "when": "editorTextFocus && vim.mode == 'Insert'"
+    },
+    {
+        "key": "ctrl+'",
+        "command": "workbench.action.terminal.toggleTerminal"
+    },
+    {
+        "key": "ctrl+shift+'",
+        "command": "workbench.action.terminal.new"
+    },
+    {
+        "key": "ctrl+`",
+        "command": "workbench.action.toggleMaximizedPanel",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+k ctrl+e",
+        "command": "workbench.action.showCommands"
+    },
+    {
+        "key": "ctrl+k ctrl+p",
+        "command": "workbench.action.showCommands"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "cursorDown",
+        "when": "editorTextFocus && vim.mode =='Insert'"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "cursorUp",
+        "when": "editorTextFocus && vim.mode =='Insert'"
+    },
+    {
+        "key": "ctrl+f",
+        "command": "cursorWordRight",
+        "when": "editorTextFocus && vim.mode =='Insert'"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "cursorWordLeft",
+        "when": "editorTextFocus && vim.mode =='Insert'"
+    },
+    {
+        "key": "alt+h",
+        "command": "cursorLeft",
+        "when": "editorTextFocus && vim.mode =='Insert'"
+    },
+    {
+        "key": "alt+f",
+        "command": "cursorRight",
+        "when": "editorTextFocus && vim.mode =='Insert'"
+    },
+    {
+        "key": "alt+w",
+        "command": "editor.action.smartSelect.grow",
+        "when": "editorTextFocus && vim.mode =='Insert'"
+    },
+    {
+        "key": "alt+shift+w",
+        "command": "editor.action.smartSelect.shrink",
+        "when": "editorTextFocus && vim.mode =='Insert'"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "editor.action.addSelectionToNextFindMatch",
+        "when": "editorFocus && vim.mode =='Insert'"
+    },
+    {
+        "key": "alt+d",
+        "command": "editor.action.moveSelectionToNextFindMatch",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+u",
+        "command": "workbench.action.terminal.scrollUp",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "workbench.action.terminal.scrollDown",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+]",
+        "command": "workbench.action.terminal.focusNext",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+[",
+        "command": "workbench.action.terminal.focusPrevious",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+k f",
+        "command": "editor.action.openLink",
+        "when": "editorFocus && vim.mode !='Insert'"
+    },
+    {
+        "key": "ctrl+k m",
+        "command": "workbench.action.maximizeEditor",
+        "when": "editorFocus && vim.mode !='Insert'"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "selectNextSuggestion",
+        "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "selectPrevSuggestion",
+        "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+    },
+    {
+        "key": "ctrl+p",
+        "command": ""
+    },
+    {
+        "key": "ctrl+p",
+        "command": "workbench.action.quickOpen",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "ctrl+[",
+        "command": "workbench.action.closeQuickOpen",
+        "when": "inQuickOpen"
+    },
+    {
+        "key": "ctrl+m",
+        "command": "workbench.action.acceptSelectedQuickOpenItem",
+        "when": "inQuickOpen"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.quickOpenNavigateNext",
+        "when": "inQuickOpen"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.quickOpenNavigatePrevious",
+        "when": "inQuickOpen"
+    }
+]
