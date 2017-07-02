@@ -1,5 +1,5 @@
 {
-    "terminal.integrated.shell.windows": "C:\\WINDOWS\\Sysnative\\cmd.exe",
+    // Place your settings in this file to overwrite the default settings
     "vim.useCtrlKeys": true,
     "vim.easymotion": true,
     "editor.fontFamily": "consolas",
@@ -178,8 +178,9 @@
         "workbench.action.terminal.toggleTerminal"
     ],
     "window.zoomLevel": 0,
-    "workbench.activityBar.visible": true,
     "window.enableMenuBarMnemonics": false,
+    "workbench.activityBar.visible": true,
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\Sysnative\\cmd.exe",
     "typescript.check.tscVersion": false,
     "vim.disableAnnoyingNeovimMessage": true
 }

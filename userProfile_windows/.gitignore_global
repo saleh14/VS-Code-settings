@@ -1,0 +1,31 @@
+# Node
+npm-debug.log
+node_modules
+
+# bower
+bower_components
+
+# Mac
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# WebStorm
+.idea/
+
+# vi
+*~
+
+# General
+log/
+*.log
+
+# etc...
+.sql
+.sass-cache/
+.codekit-config.json
+sh.exe.stackdump  
+
+
+

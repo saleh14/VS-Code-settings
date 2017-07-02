@@ -162,5 +162,20 @@
         "key": "ctrl+k",
         "command": "workbench.action.quickOpenNavigatePrevious",
         "when": "inQuickOpen"
+    },
+    {
+        "key": "ctrl+m",
+        "command": "insertSnippet",
+        "when": "config.editor.tabCompletion && editorTextFocus && hasSnippetCompletions && !editorTabMovesFocus && vim.mode == 'Insert' && !inSnippetMode"
+    },
+    {
+        "key": "ctrl+m",
+        "command": "acceptSelectedSuggestion",
+        "when": "editorTextFocus && suggestWidgetVisible && vim.mode == 'Insert'"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "workbench.action.closeActiveEditor",
+        "when": "vim.mode !='Insert'"
     }
 ]
