@@ -2,10 +2,11 @@
     // Place your settings in this file to overwrite the default settings
     "vim.useCtrlKeys": true,
     "vim.easymotion": true,
-    "editor.fontFamily": "consolas",
+    "editor.fontFamily": "Fira Code",
     "editor.fontSize": 16,
     "editor.formatOnSave": true,
     "editor.fontLigatures": true,
+    "editor.tabSize": 2,
     "vim.insertModeKeyBindings": [
         {
             "before": [
@@ -177,8 +178,27 @@
         "workbench.action.terminal.scrollUpPage",
         "workbench.action.terminal.toggleTerminal"
     ],
+    //standard settings
+    "javascript.validate.enable": false,
+    "standard.validate": [
+        "javascript",
+        "javascriptreact",
+        {
+            "language": "html",
+            "autoFix": true
+        }
+    ],
+    "standard.options": {
+        "plugins": [
+            "html"
+        ]
+    },
+    "files.associations": {
+        "*.vue": "html"
+    },
     "window.zoomLevel": 0,
     "window.enableMenuBarMnemonics": false,
+    "standard.autoFixOnSave": true,
     "workbench.activityBar.visible": true,
     "terminal.integrated.shell.windows": "C:\\WINDOWS\\Sysnative\\cmd.exe",
     "typescript.check.tscVersion": false,

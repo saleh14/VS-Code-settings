@@ -136,12 +136,8 @@
     },
     {
         "key": "ctrl+p",
-        "command": ""
-    },
-    {
-        "key": "ctrl+p",
-        "command": "workbench.action.quickOpen",
-        "when": "!terminalFocus"
+        "command": "",
+        "when": "terminalFocus"
     },
     {
         "key": "ctrl+[",
@@ -176,6 +172,21 @@
     {
         "key": "ctrl+w",
         "command": "workbench.action.closeActiveEditor",
+        "when": "vim.mode !='Insert'"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "workbench.action.toggleSidebarVisibility",
+        "when": "vim.mode !='Insert'"
+    },
+    {
+        "key": "alt+k",
+        "command": "workbench.action.nextEditor",
+        "when": "vim.mode !='Insert'"
+    },
+    {
+        "key": "alt+j",
+        "command": "workbench.action.previousEditor",
         "when": "vim.mode !='Insert'"
     }
 ]
