@@ -1,0 +1,300 @@
+{
+    // Place your settings in this file to overwrite the default settings
+    "vim.useCtrlKeys": true,
+    "vim.easymotion": true,
+    "workbench.colorTheme": "Sublime Material Theme - Light",
+    "explorer.openEditors.visible": 0,
+    "editor.fontFamily": "Fira Code",
+    "vim.enableNeovim": true,
+    "vim.neovimPath": "C:\\tools\\neovim\\Neovim\\bin\\nvim.exe",
+    "git.path": "d:\\Program Files\\Git\\bin\\git.exe",
+    "editor.fontSize": 16,
+    "editor.formatOnSave": true,
+    "editor.fontLigatures": true,
+    "editor.tabSize": 2,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "A",
+                "A"
+            ],
+            "after": [
+                "<Esc>",
+                "A"
+            ]
+        },
+        {
+            "before": [
+                "I",
+                "I"
+            ],
+            "after": [
+                "<Esc>",
+                "I"
+            ]
+        },
+        {
+            "before": [
+                "ctrl+shift+d"
+            ],
+            "after": [
+                "<Esc>",
+                "h",
+                "i"
+            ]
+        },
+        {
+            "before": [
+                "S",
+                "S"
+            ],
+            "after": [
+                "<Esc>",
+                "S"
+            ]
+        },
+        {
+            "before": [
+                "C",
+                "C"
+            ],
+            "after": [
+                "<Esc>",
+                "l",
+                "c",
+                "a",
+                "w"
+            ]
+        },
+        {
+            "before": [
+                "P",
+                "P"
+            ],
+            "after": [
+                "<Esc>",
+                "p",
+                "i"
+            ]
+        },
+        {
+            "before": [
+                "U",
+                "U"
+            ],
+            "after": [
+                "<Esc>",
+                "u",
+                "i"
+            ]
+        },
+        {
+            "before": [
+                "L",
+                "L"
+            ],
+            "after": [
+                "<Esc>",
+                "h",
+                "g",
+                "~",
+                "i",
+                "w",
+                "e",
+                "a"
+            ]
+        },
+        {
+            "before": [
+                "j",
+                "j"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        },
+        {
+            "before": [
+                "ctrl+k",
+                "ctrl+p"
+            ],
+            "after": [
+                "<Esc>",
+                "ctrl+k",
+                "ctrl+p",
+                "i"
+            ]
+        }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": [],
+    "vim.otherModesKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<leader>",
+                "s"
+            ],
+            "after": [
+                " ",
+                " ",
+                "s"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "b"
+            ],
+            "after": [
+                " ",
+                " ",
+                "b"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "w"
+            ],
+            "after": [
+                " ",
+                " ",
+                "w"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "j"
+            ],
+            "after": [
+                " ",
+                " ",
+                "j"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "k"
+            ],
+            "after": [
+                " ",
+                " ",
+                "k"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "e"
+            ],
+            "after": [
+                " ",
+                " ",
+                "e"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "t"
+            ],
+            "after": [
+                " ",
+                " ",
+                "t"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "f"
+            ],
+            "after": [
+                " ",
+                " ",
+                "f"
+            ]
+        }
+        //     {
+        //         "before":[
+        //             " "
+        //         ],
+        //         "after":[
+        //             "\\\\"
+        //         ]
+        //     }
+        //     // {
+        //     //     "before": [
+        //     //         " ",
+        //     //         "b"
+        //     //     ],
+        //     //     "after": [
+        //     //         "\\",
+        //     //         "\\",
+        //     //         "b"
+        //     //     ]
+        //     // },
+        //     // {
+        //     //     "before": [
+        //     //         " ",
+        //     //         "w"
+        //     //     ],
+        //     //     "after": [
+        //     //         "\\",
+        //     //         "\\",
+        //     //         "w"
+        //     //     ]
+    ],
+    "terminal.integrated.commandsToSkipShell": [
+        "workbench.action.quickOpen",
+        "workbench.action.openEditorAtIndex1",
+        "workbench.action.openEditorAtIndex2",
+        "editor.action.outdentLines",
+        "workbench.action.openEditorAtIndex3",
+        "workbench.action.openEditorAtIndex4",
+        "workbench.action.showCommands",
+        "workbench.action.terminal.clear",
+        "workbench.action.terminal.copySelection",
+        "workbench.action.terminal.focus",
+        "workbench.action.terminal.focusNext",
+        "workbench.action.terminal.focusPrevious",
+        "workbench.action.terminal.kill",
+        "workbench.action.terminal.new",
+        "workbench.action.terminal.paste",
+        "workbench.action.terminal.runSelectedText",
+        "workbench.action.terminal.scrollDown",
+        "workbench.action.terminal.scrollDownPage",
+        "workbench.action.terminal.scrollUp",
+        "workbench.action.terminal.scrollUpPage",
+        "workbench.action.terminal.toggleTerminal"
+    ],
+    //standard settings
+    "javascript.validate.enable": false,
+    "standard._legacyModuleResolve": true,
+    "standard.validate": [
+        "javascript",
+        "javascriptreact",
+        {
+            "language": "html",
+            "autoFix": true
+        }
+    ],
+    "standard.options": {
+        "plugins": [
+            "html"
+        ]
+    },
+    "files.associations": {
+        "*.vue": "html"
+    },
+    "window.zoomLevel": -1,
+    "window.enableMenuBarMnemonics": false,
+    "vim.leader": "<space>",
+    "standard.autoFixOnSave": true,
+    "workbench.activityBar.visible": false,
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\SysWOW64\\cmd.exe",
+    "workbench.startupEditor": "",
+    "vim.disableAnnoyingNeovimMessage": true,
+    "editor.minimap.enabled": false
+}
