@@ -105,12 +105,12 @@
         "when": "terminalFocus"
     },
     {
-        "key": "ctrl+]",
+        "key": "ctrl+shift+]",
         "command": "workbench.action.terminal.focusNext",
         "when": "terminalFocus"
     },
     {
-        "key": "ctrl+[",
+        "key": "ctrl+shift+[",
         "command": "workbench.action.terminal.focusPrevious",
         "when": "terminalFocus"
     },
@@ -145,6 +145,11 @@
         "when": "inQuickOpen"
     },
     {
+        "key": "ctrl+;",
+        "command": "workbench.action.acceptSelectedQuickOpenItem",
+        "when": "inQuickOpen"
+    },
+    {
         "key": "ctrl+m",
         "command": "workbench.action.acceptSelectedQuickOpenItem",
         "when": "inQuickOpen"
@@ -160,12 +165,12 @@
         "when": "inQuickOpen"
     },
     {
-        "key": "ctrl+m",
+        "key": "ctrl+;",
         "command": "insertSnippet",
         "when": "config.editor.tabCompletion && editorTextFocus && hasSnippetCompletions && !editorTabMovesFocus && vim.mode == 'Insert' && !inSnippetMode"
     },
     {
-        "key": "ctrl+m",
+        "key": "ctrl+;",
         "command": "acceptSelectedSuggestion",
         "when": "editorTextFocus && suggestWidgetVisible && vim.mode == 'Insert'"
     },

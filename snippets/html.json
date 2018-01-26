@@ -1,0 +1,55 @@
+{
+	/*
+	// Place your snippets for HTML here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	"Print to console": {
+		"prefix": "log",
+		"body": [
+			"console.log('$1');",
+			"$2"
+		],
+		"description": "Log output to console"
+	}
+*/
+"put script data for UI5": {
+  "prefix": "UI5Starter",
+  "body": [
+    "<script ",
+    "  id=\"sap-ui-bootstrap\"",
+    "  src=\"lib/sap-ui-core-all.js\"",
+    "  data-sap-ui-theme=\"sap_bluecrystal\"",
+    "  data-sap-ui-lib=\"sap.m\"",
+    "  data-sap-ui-compatVersion=\"edge\"",
+    "  data-sap-preloaud=\"async\"",
+    "  data-sap-ui-resourceroots='{\"opensap.myapp\":\"/\"}'>",
+    "</script>"
+  ],
+  "description": "put script data for UI5"
+},
+"OpenUI5 attachInit with a compoenent": {
+  "prefix": "openui5AttachInitComponent",
+  "body": [
+    "<script>",
+    "  sap.ui.getCore().attachInit(function () {",
+    "    new sap.ui.core.ComponentContainer({",
+    "      name: 'opensap.myapp'",
+    "    }).placeAt('content')",
+    "  })",
+    "</script>"
+  ],
+  "description": "OpenUI5 attachInit with a compoenent"
+}
+	"OpenUI5 attachInit with a view": {
+		"prefix": "openui5AttachInitView",
+		"body": [
+			"\tsap.ui.getCore().attachInit(function () {",
+			"\t  sap.ui.xmlview({",
+			"\t    viewName: 'sap.ui.demo.wt.App'",
+			"\t\t}).placeAt('content')",
+			"\t})"
+		]
+	}
+}
