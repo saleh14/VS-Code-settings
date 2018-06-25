@@ -3,10 +3,9 @@
     "vim.useCtrlKeys": true,
     "vim.easymotion": true,
     "editor.fontFamily": "Fira Code",
-    "workbench.colorTheme": "Bimbo Theme",
     "explorer.openEditors.visible": 0,
     "vim.enableNeovim": true,
-    "vim.neovimPath": "C:\\tools\\neovim\\Neovim\\bin\\nvim.exe",
+    // "vim.neovimPath": "f:\\program files\\Neovim\\bin\\nvim.exe",
     "editor.fontSize": 16,
     "editor.formatOnSave": true,
     "editor.fontLigatures": true,
@@ -259,11 +258,18 @@
         "*.vue": "html"
     },
     "window.zoomLevel": 0,
-    "terminal.integrated.shell.windows": "C:\\WINDOWS\\Sysnative\\cmd.exe",
+    "terminal.integrated.shell.windows": "cmd.exe",
+    "terminal.integrated.shellArgs.windows": [
+        "/k",
+        "e://users//Saleh//Downloads//cmder_mini//vendor//init.bat"
+    ],
     "window.enableMenuBarMnemonics": false,
     "vim.leader": "<space>",
     "standard.autoFixOnSave": true,
     "workbench.activityBar.visible": false,
-    "workbench.startupEditor": "",
-    "editor.minimap.enabled": false
+    "workbench.startupEditor": "none",
+    "editor.minimap.enabled": false,
+    "workbench.colorTheme": "Bimbo Theme",
+    "vim.disableExtension": false,
+    "window.menuBarVisibility": "toggle"
 }

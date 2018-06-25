@@ -121,6 +121,11 @@
     },
     {
         "key": "ctrl+k m",
+        "command": "workbench.action.toggleSidebarVisibility",
+        "when": "!editorTextFocus"
+    },
+    {
+        "key": "ctrl+k m",
         "command": "workbench.action.maximizeEditor",
         "when": "editorFocus && vim.mode !='Insert'"
     },
@@ -188,6 +193,15 @@
         "key": "alt+k",
         "command": "workbench.action.nextEditor",
         "when": "vim.mode !='Insert'"
+    },
+    {
+        "key": "ctrl+q",
+        "command": "workbench.action.quickOpenView"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "extension.vim_ctrl+b",
+        "when": "editorTextFocus && vim.active && vim.use<C-b> && !inDebugRepl && vim.mode != 'Insert'"
     },
     {
         "key": "alt+j",
