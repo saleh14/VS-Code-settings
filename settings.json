@@ -2,11 +2,15 @@
     // Place your settings in this file to overwrite the default settings
     "vim.useCtrlKeys": true,
     "vim.easymotion": true,
-    "editor.fontFamily": "Fira Code",
+    "editor.fontFamily": "consolas",
     "explorer.openEditors.visible": 0,
     "vim.enableNeovim": true,
     // "vim.neovimPath": "f:\\program files\\Neovim\\bin\\nvim.exe",
-    "editor.fontSize": 16,
+    "vim.foldfix": true,
+    "vim.handleKeys": {
+        "<C-d>": false
+    },
+    "editor.fontSize": 18,
     "editor.formatOnSave": true,
     "editor.fontLigatures": true,
     "editor.tabSize": 2,

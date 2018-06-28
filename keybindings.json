@@ -11,6 +11,11 @@
         "when": "editorTextFocus && !inDebugRepl"
     },
     {
+        "key": "ctrl+d",
+        "command": "workbench.action.terminal.scrollDown",
+        "when": "terminalFocus"
+    },
+    {
         "key": "ctrl+m",
         "command": "type",
         "args": {
@@ -70,6 +75,21 @@
         "when": "editorTextFocus && vim.mode =='Insert'"
     },
     {
+        "key": "ctrl+v",
+        "command": "editor.action.clipboardPasteAction",
+        "when": "editorTextFocus && vim.mode =='Insert'"
+    },
+    {
+        "key": "ctrl+k v",
+        "command": "editor.action.clipboardPasteAction",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+c",
+        "command": "editor.action.clipboardCopyAction",
+        "when": "editorTextFocus"
+    },
+    {
         "key": "alt+f",
         "command": "cursorRight",
         "when": "editorTextFocus && vim.mode =='Insert'"
@@ -85,11 +105,6 @@
         "when": "editorTextFocus && vim.mode =='Insert'"
     },
     {
-        "key": "ctrl+d",
-        "command": "editor.action.addSelectionToNextFindMatch",
-        "when": "editorFocus && vim.mode =='Insert'"
-    },
-    {
         "key": "alt+d",
         "command": "editor.action.moveSelectionToNextFindMatch",
         "when": "editorFocus"
@@ -97,11 +112,6 @@
     {
         "key": "ctrl+u",
         "command": "workbench.action.terminal.scrollUp",
-        "when": "terminalFocus"
-    },
-    {
-        "key": "ctrl+d",
-        "command": "workbench.action.terminal.scrollDown",
         "when": "terminalFocus"
     },
     {
