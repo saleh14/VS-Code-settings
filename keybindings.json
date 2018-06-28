@@ -190,6 +190,11 @@
         "when": "vim.mode !='Insert'"
     },
     {
+        "key": "ctrl+n",
+        "command": "explorer.newFile",
+        "when": "explorerViewletFocus && explorerViewletVisible && !inputFocus"
+    },
+    {
         "key": "alt+j",
         "command": "workbench.action.previousEditor",
         "when": "vim.mode !='Insert'"
