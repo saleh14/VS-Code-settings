@@ -55,11 +55,6 @@
         "when": "editorTextFocus && vim.mode =='Insert'"
     },
     {
-        "key": "ctrl+k",
-        "command": "cursorUp",
-        "when": "editorTextFocus && vim.mode =='Insert'"
-    },
-    {
         "key": "ctrl+f",
         "command": "cursorWordRight",
         "when": "editorTextFocus && vim.mode =='Insert'"
@@ -178,6 +173,11 @@
         "key": "ctrl+k",
         "command": "workbench.action.quickOpenNavigatePrevious",
         "when": "inQuickOpen"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "cursorUp",
+        "when": "!suggestWidgetVisible && vim.mode =='Insert'"
     },
     {
         "key": "ctrl+;",
