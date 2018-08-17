@@ -19,6 +19,11 @@
     "when": "editorTextFocus"
   },
   {
+    "key": "shift+ctrl+k",
+    "command": "editor.action.deleteLines",
+    "when": "textInputFocus && !editorReadonly"
+  },
+  {
     "key": "ctrl+m",
     "command": "editor.action.insertLineAfter",
     "when": "editorTextFocus && vim.mode == 'Insert'"
@@ -79,24 +84,14 @@
     "when": "editorTextFocus && vim.mode =='Insert'"
   },
   {
-    "key": "alt+w",
-    "command": "editor.action.smartSelect.grow",
-    "when": "editorTextFocus && vim.mode =='Insert'"
-  },
-  {
-    "key": "alt+shift+w",
-    "command": "editor.action.smartSelect.shrink",
-    "when": "editorTextFocus && vim.mode =='Insert'"
-  },
-  {
     "key": "ctrl+d",
     "command": "editor.action.addSelectionToNextFindMatch",
-    "when": "editorFocus && vim.mode =='Insert'"
+    "when": "editorTextFocus"
   },
   {
     "key": "cmd+d",
     "command": "editor.action.addSelectionToNextFindMatch",
-    "when": "editorFocus"
+    "when": "editorTextFocus"
   },
   {
     "key": "alt+d",

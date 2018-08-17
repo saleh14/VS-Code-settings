@@ -2,7 +2,6 @@
     // Place your settings in this file to overwrite the default settings
     "explorer.openEditors.visible": 0,
     //"vim.enableNeovim": true,
-    "editor.smoothScrolling": true,
     // Controls the font family.
     "editor.fontFamily": "Dank Mono",
     // Controls the line height. Use 0 to compute the lineHeight from the fontSize.
@@ -12,6 +11,10 @@
     "editor.fontSize": 15,
     "vim.useCtrlKeys": true,
     "vim.sneak": true,
+    "vim.handleKeys": {
+        "<C-d>": false,
+        "<D-d>": false
+    },
     "terminal.integrated.fontSize": 16,
     "terminal.integrated.shell.osx": "zsh",
     "editor.formatOnSave": true,
@@ -141,6 +144,7 @@
         }
     ],
     "vim.insertModeKeyBindingsNonRecursive": [],
+    "editor.smoothScrolling": false,
     "terminal.integrated.commandsToSkipShell": [
         "workbench.action.quickOpen",
         "workbench.action.openEditorAtIndex1",
