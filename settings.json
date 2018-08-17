@@ -10,6 +10,10 @@
     "explorer.decorations.badges": false,
     "editor.fontSize": 15,
     "vim.useCtrlKeys": true,
+    "vim.autoSwitchInputMethod.enable": true,
+    "vim.autoSwitchInputMethod.defaultIM": "com.apple.keylayout.USInternational-PC",
+    "vim.autoSwitchInputMethod.obtainIMCmd": "/usr/local/bin/im-select",
+    "vim.autoSwitchInputMethod.switchIMCmd": "/usr/local/bin/im-select {im}",
     "vim.sneak": true,
     "vim.handleKeys": {
         "<C-d>": false,
@@ -201,5 +205,5 @@
     "workbench.colorTheme": "Material Theme",
     "materialTheme.fixIconsRunning": false,
     "workbench.iconTheme": "eq-material-theme-icons",
-    "breadcrumbs.enabled": true
+    "breadcrumbs.enabled": false,
 }
