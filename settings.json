@@ -1,15 +1,29 @@
 {
     // Place your settings in this file to overwrite the default settings
     "vim.useCtrlKeys": true,
-    "vim.sneak": true,
-    "workbench.colorTheme": "Bimbo Theme",
+    "editor.fontFamily": "Dank Mono",
     "explorer.openEditors.visible": 0,
-    "editor.fontFamily": "Anonymous Pro",
     "vim.enableNeovim": true,
-    "vim.neovimPath": "C:\\tools\\neovim\\Neovim\\bin\\nvim.exe",
-    "git.path": "d:\\Program Files\\Git\\bin\\git.exe",
-    "editor.fontSize": 18,
-    "terminal.integrated.fontSize": 16,
+    // "vim.neovimPath": "f:\\program files\\Neovim\\bin\\nvim.exe",
+    "vim.foldfix": true,
+    "vim.handleKeys": {
+        "<C-d>": false
+    },
+    //  E.g.: `{"vue-html": "html", "javascript": "javascriptreact"}`
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    },
+    "[javascript]": {
+        "editor.renderWhitespace": "all",
+        "editor.foldingStrategy": "indentation",
+        // "editor.foldingStrategy": "auto"
+        "editor.getOutliningSpans": ""
+    },
+    "[javascriptreact]": {
+        "editor.renderWhitespace": "all",
+        "editor.foldingStrategy": "indentation"
+    },
+    "editor.fontSize": 15,
     "editor.formatOnSave": true,
     "editor.fontLigatures": true,
     "editor.tabSize": 2,
@@ -217,35 +231,6 @@
                 "f"
             ]
         }
-        //     {
-        //         "before":[
-        //             " "
-        //         ],
-        //         "after":[
-        //             "\\\\"
-        //         ]
-        //     }
-        //     // {
-        //     //     "before": [
-        //     //         " ",
-        //     //         "b"
-        //     //     ],
-        //     //     "after": [
-        //     //         "\\",
-        //     //         "\\",
-        //     //         "b"
-        //     //     ]
-        //     // },
-        //     // {
-        //     //     "before": [
-        //     //         " ",
-        //     //         "w"
-        //     //     ],
-        //     //     "after": [
-        //     //         "\\",
-        //     //         "\\",
-        //     //         "w"
-        //     //     ]
     ],
     "terminal.integrated.commandsToSkipShell": [
         "workbench.action.quickOpen",
@@ -290,21 +275,21 @@
         "*.vue": "html",
         "*.sgr": "Pug"
     },
-    "window.zoomLevel": -1,
+    "window.zoomLevel": 0,
+    "terminal.integrated.shell.windows": "cmd.exe",
+    "terminal.integrated.shellArgs.windows": [
+        "/k",
+        "d://cmder//vendor//init.bat"
+    ],
     "window.enableMenuBarMnemonics": false,
     "puglint.enable": true,
     "vim.leader": "<space>",
     "standard.autoFixOnSave": true,
     "workbench.activityBar.visible": false,
-    // "terminal.integrated.shell.windows": "C:\\WINDOWS\\SysWOW64\\cmd.exe",
-    "terminal.integrated.shell.windows": "cmd.exe",
-    "terminal.integrated.shellArgs.windows": [
-        "/k",
-        "D:\\Program Files\\cmder\\vendor\\init.bat"
-    ],
-    "workbench.startupEditor": "",
+    "workbench.startupEditor": "none",
     "editor.minimap.enabled": false,
-    "editor.multiCursorModifier": "alt",
+    "workbench.colorTheme": "Atom One Light",
     "vim.disableExtension": false,
-    "window.menuBarVisibility": "toggle"
+    "window.menuBarVisibility": "toggle",
+    "vim.sneak": true
 }

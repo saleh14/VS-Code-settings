@@ -11,6 +11,11 @@
         "when": "editorTextFocus && !inDebugRepl"
     },
     {
+        "key": "ctrl+d",
+        "command": "workbench.action.terminal.scrollDown",
+        "when": "terminalFocus"
+    },
+    {
         "key": "ctrl+m",
         "command": "type",
         "args": {
@@ -41,6 +46,11 @@
         "command": "workbench.action.showCommands"
     },
     {
+        "key": "ctrl+m",
+        "command": "",
+        "when": "editorFocus && vim.mode !='Insert'"
+    },
+    {
         "key": "ctrl+k ctrl+p",
         "command": "workbench.action.showCommands"
     },
@@ -50,13 +60,8 @@
         "when": "editorTextFocus && vim.mode =='Insert'"
     },
     {
-        "key": "ctrl+k",
-        "command": "cursorUp",
-        "when": "editorTextFocus && vim.mode =='Insert'"
-    },
-    {
         "key": "ctrl+f",
-        "command": "cursorWordRight",
+        "command": "cursorWordPartRight",
         "when": "editorTextFocus && vim.mode =='Insert'"
     },
     {
@@ -68,6 +73,21 @@
         "key": "alt+h",
         "command": "cursorLeft",
         "when": "editorTextFocus && vim.mode =='Insert'"
+    },
+    {
+        "key": "ctrl+v",
+        "command": "editor.action.clipboardPasteAction",
+        "when": "editorTextFocus && vim.mode =='Insert'"
+    },
+    {
+        "key": "ctrl+k v",
+        "command": "editor.action.clipboardPasteAction",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+c",
+        "command": "editor.action.clipboardCopyAction",
+        "when": "editorTextFocus"
     },
     {
         "key": "alt+f",
@@ -85,11 +105,6 @@
         "when": "editorTextFocus && vim.mode =='Insert'"
     },
     {
-        "key": "ctrl+d",
-        "command": "editor.action.addSelectionToNextFindMatch",
-        "when": "editorFocus && vim.mode =='Insert'"
-    },
-    {
         "key": "alt+d",
         "command": "editor.action.moveSelectionToNextFindMatch",
         "when": "editorFocus"
@@ -97,11 +112,6 @@
     {
         "key": "ctrl+u",
         "command": "workbench.action.terminal.scrollUp",
-        "when": "terminalFocus"
-    },
-    {
-        "key": "ctrl+d",
-        "command": "workbench.action.terminal.scrollDown",
         "when": "terminalFocus"
     },
     {
@@ -118,6 +128,11 @@
         "key": "ctrl+k f",
         "command": "editor.action.openLink",
         "when": "editorFocus && vim.mode !='Insert'"
+    },
+    {
+        "key": "ctrl+k m",
+        "command": "workbench.action.toggleSidebarVisibility",
+        "when": "!editorTextFocus"
     },
     {
         "key": "ctrl+k m",
@@ -165,6 +180,11 @@
         "when": "inQuickOpen"
     },
     {
+        "key": "ctrl+k",
+        "command": "cursorUp",
+        "when": "!suggestWidgetVisible && vim.mode =='Insert'"
+    },
+    {
         "key": "ctrl+;",
         "command": "insertSnippet",
         "when": "config.editor.tabCompletion && editorTextFocus && hasSnippetCompletions && !editorTabMovesFocus && vim.mode == 'Insert' && !inSnippetMode"
@@ -190,9 +210,13 @@
         "when": "vim.mode !='Insert'"
     },
     {
-        "key": "ctrl+n",
-        "command": "explorer.newFile",
-        "when": "explorerViewletFocus && explorerViewletVisible && !inputFocus"
+        "key": "ctrl+q",
+        "command": "workbench.action.quickOpenView"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "extension.vim_ctrl+b",
+        "when": "editorTextFocus && vim.active && vim.use<C-b> && !inDebugRepl && vim.mode != 'Insert'"
     },
     {
         "key": "alt+j",
