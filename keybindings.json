@@ -130,6 +130,11 @@
         "when": "!editorTextFocus"
     },
     {
+        "key": "ctrl+m",
+        "command": "",
+        "when": "!editorFocus"
+    },
+    {
         "key": "ctrl+k m",
         "command": "workbench.action.maximizeEditor",
         "when": "editorFocus && vim.mode !='Insert'"
