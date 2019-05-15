@@ -46,11 +46,6 @@
         "command": "workbench.action.showCommands"
     },
     {
-        "key": "ctrl+m",
-        "command": "",
-        "when": "editorFocus && vim.mode !='Insert'"
-    },
-    {
         "key": "ctrl+k ctrl+p",
         "command": "workbench.action.showCommands"
     },
@@ -135,6 +130,11 @@
         "when": "!editorTextFocus"
     },
     {
+        "key": "ctrl+m",
+        "command": "",
+        "when": "!editorFocus"
+    },
+    {
         "key": "ctrl+k m",
         "command": "workbench.action.maximizeEditor",
         "when": "editorFocus && vim.mode !='Insert'"
@@ -205,7 +205,7 @@
         "when": "vim.mode !='Insert'"
     },
     {
-        "key": "alt+k",
+        "key": "alt+]",
         "command": "workbench.action.nextEditor",
         "when": "vim.mode !='Insert'"
     },
@@ -219,7 +219,7 @@
         "when": "editorTextFocus && vim.active && vim.use<C-b> && !inDebugRepl && vim.mode != 'Insert'"
     },
     {
-        "key": "alt+j",
+        "key": "alt+[",
         "command": "workbench.action.previousEditor",
         "when": "vim.mode !='Insert'"
     }

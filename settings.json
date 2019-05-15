@@ -1,237 +1,24 @@
-{
-    // Place your settings in this file to overwrite the default settings
+{ // Place your settings in this file to overwrite the default settings
     "vim.useCtrlKeys": true,
+    "vim.easymotion": true,
     "editor.fontFamily": "Dank Mono",
     "explorer.openEditors.visible": 0,
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    },
     "vim.enableNeovim": true,
-    // "vim.neovimPath": "f:\\program files\\Neovim\\bin\\nvim.exe",
+    "vim.neovimPath": "d:\\program files\\Neovim\\bin\\nvim.exe",
     "vim.foldfix": true,
     "vim.handleKeys": {
         "<C-d>": false
     },
-    //  E.g.: `{"vue-html": "html", "javascript": "javascriptreact"}`
-    "emmet.includeLanguages": {
-        "javascript": "javascriptreact"
-    },
-    "[javascript]": {
-        "editor.renderWhitespace": "all",
-        "editor.foldingStrategy": "indentation",
-        // "editor.foldingStrategy": "auto"
-        "editor.getOutliningSpans": ""
-    },
-    "[javascriptreact]": {
-        "editor.renderWhitespace": "all",
-        "editor.foldingStrategy": "indentation"
-    },
-    "editor.fontSize": 15,
+    "editor.fontSize": 16,
     "editor.formatOnSave": true,
     "editor.fontLigatures": true,
     "editor.tabSize": 2,
-    "vim.insertModeKeyBindings": [
-        {
-            "before": [
-                "A",
-                "A"
-            ],
-            "after": [
-                "<Esc>",
-                "A"
-            ]
-        },
-        {
-            "before": [
-                "I",
-                "I"
-            ],
-            "after": [
-                "<Esc>",
-                "I"
-            ]
-        },
-        {
-            "before": [
-                "ctrl+shift+d"
-            ],
-            "after": [
-                "<Esc>",
-                "h",
-                "i"
-            ]
-        },
-        {
-            "before": [
-                "S",
-                "S"
-            ],
-            "after": [
-                "<Esc>",
-                "S"
-            ]
-        },
-        {
-            "before": [
-                "C",
-                "C"
-            ],
-            "after": [
-                "<Esc>",
-                "l",
-                "c",
-                "a",
-                "w"
-            ]
-        },
-        {
-            "before": [
-                "P",
-                "P"
-            ],
-            "after": [
-                "<Esc>",
-                "p",
-                "i"
-            ]
-        },
-        {
-            "before": [
-                "U",
-                "U"
-            ],
-            "after": [
-                "<Esc>",
-                "u",
-                "i"
-            ]
-        },
-        {
-            "before": [
-                "L",
-                "L"
-            ],
-            "after": [
-                "<Esc>",
-                "h",
-                "g",
-                "~",
-                "i",
-                "w",
-                "e",
-                "a"
-            ]
-        },
-        {
-            "before": [
-                "j",
-                "j"
-            ],
-            "after": [
-                "<Esc>"
-            ]
-        },
-        {
-            "before": [
-                "ctrl+k",
-                "ctrl+p"
-            ],
-            "after": [
-                "<Esc>",
-                "ctrl+k",
-                "ctrl+p",
-                "i"
-            ]
-        }
-    ],
+    "vim.sneak": true,
+    "vim.insertModeKeyBindings": [],
     "vim.insertModeKeyBindingsNonRecursive": [],
-    "vim.otherModesKeyBindingsNonRecursive": [
-        {
-            "before": [
-                "<leader>",
-                "s"
-            ],
-            "after": [
-                " ",
-                " ",
-                "s"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "b"
-            ],
-            "after": [
-                " ",
-                " ",
-                "b"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "w"
-            ],
-            "after": [
-                " ",
-                " ",
-                "w"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "j"
-            ],
-            "after": [
-                " ",
-                " ",
-                "j"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "k"
-            ],
-            "after": [
-                " ",
-                " ",
-                "k"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "e"
-            ],
-            "after": [
-                " ",
-                " ",
-                "e"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "t"
-            ],
-            "after": [
-                " ",
-                " ",
-                "t"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "f"
-            ],
-            "after": [
-                " ",
-                " ",
-                "f"
-            ]
-        }
-    ],
     "terminal.integrated.commandsToSkipShell": [
         "workbench.action.quickOpen",
         "workbench.action.openEditorAtIndex1",
@@ -276,20 +63,20 @@
         "*.sgr": "Pug"
     },
     "window.zoomLevel": 0,
-    "terminal.integrated.shell.windows": "cmd.exe",
     "terminal.integrated.shellArgs.windows": [
         "/k",
         "d://cmder//vendor//init.bat"
     ],
+    "terminal.integrated.shell.windows": "cmd.exe",
     "window.enableMenuBarMnemonics": false,
-    "puglint.enable": true,
-    "vim.leader": "<space>",
-    "standard.autoFixOnSave": true,
-    "workbench.activityBar.visible": false,
+    "vim.leader": ",",
+    "workbench.activityBar.visible": true,
     "workbench.startupEditor": "none",
     "editor.minimap.enabled": false,
-    "workbench.colorTheme": "Atom One Light",
     "vim.disableExtension": false,
     "window.menuBarVisibility": "toggle",
-    "vim.sneak": true
+    "terminal.integrated.rendererType": "dom",
+    "breadcrumbs.enabled": false,
+    "workbench.colorTheme": "Atom One Light",
+    "debug.node.autoAttach": "on"
 }
