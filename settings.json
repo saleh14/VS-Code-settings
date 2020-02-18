@@ -12,12 +12,14 @@
     "vim.neovimPath": "d:\\program files\\Neovim\\bin\\nvim.exe",
     "vim.foldfix": true,
     "vim.handleKeys": {
-        "<C-d>": false
+        "<C-d>": false,
+        "<C-o>": false
     },
     "editor.lineHeight": 25,
-    "editor.letterSpacing": 0.5,
     "files.trimTrailingWhitespace": true,
-    "editor.fontFamily": "Dank Mono",
+    "editor.fontFamily": "jetbrains mono",
+    // "editor.fontfamily": "dank mono",
+    "editor.letterSpacing": 0.5,
     "editor.fontWeight": "400",
     "editor.fontSize": 14,
     "editor.fontLigatures": true,
@@ -30,7 +32,7 @@
     // Windows: file:///C:/Users/YOUR-PC-USERNAME/.vscodestyles.css
     "editor.renderWhitespace": "all",
     "debug.toolBarLocation": "floating",
-    "editor.autoIndent": true,
+    "editor.autoIndent": "brackets",
     "editor.codeLens": false,
     "editor.cursorBlinking": "smooth",
     "editor.cursorStyle": "line",
@@ -112,5 +114,6 @@
     "[json]": {
         "editor.defaultFormatter": "bysabi.prettier-vscode-standard"
     },
-    "diffEditor.ignoreTrimWhitespace": true
+    "diffEditor.ignoreTrimWhitespace": true,
+    "html.mirrorCursorOnMatchingTag": false
 }

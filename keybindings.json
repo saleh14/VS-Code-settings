@@ -6,6 +6,16 @@
         "when": "editorTextFocus"
     },
     {
+        "key": "ctrl+i",
+        "command": "workbench.action.navigateForward",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+o",
+        "command": "workbench.action.navigateBack",
+        "when": "editorTextFocus"
+    },
+    {
         "key": "ctrl+h",
         "command": "extension.vim_backspace",
         "when": "editorTextFocus && !inDebugRepl"
@@ -205,9 +215,9 @@
         "when": "vim.mode !='Insert'"
     },
     {
-        "key": "alt+]",
+        "key": "ctrl+shift+]",
         "command": "workbench.action.nextEditor",
-        "when": "vim.mode !='Insert'"
+        "when": "editorTextFocus"
     },
     {
         "key": "ctrl+q",
@@ -219,8 +229,8 @@
         "when": "editorTextFocus && vim.active && vim.use<C-b> && !inDebugRepl && vim.mode != 'Insert'"
     },
     {
-        "key": "alt+[",
+        "key": "ctrl+shift+[",
         "command": "workbench.action.previousEditor",
-        "when": "vim.mode !='Insert'"
+        "when": "editorTextFocus"
     }
 ]
