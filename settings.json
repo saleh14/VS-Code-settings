@@ -1,209 +1,171 @@
 {
-    // Place your settings in this file to overwrite the default settings
-    "explorer.openEditors.visible": 0,
-    //"vim.enableNeovim": true,
-    // Controls the font family.
-    "editor.fontFamily": "Dank Mono",
-    // Controls the line height. Use 0 to compute the lineHeight from the fontSize.
-    "editor.lineHeight": 24,
-    // Controls if file decorations should use badges.
-    "explorer.decorations.badges": false,
-    "editor.fontSize": 15,
-    "vim.useCtrlKeys": true,
-    "vim.autoSwitchInputMethod.enable": true,
-    "vim.autoSwitchInputMethod.defaultIM": "com.apple.keylayout.USInternational-PC",
-    "vim.autoSwitchInputMethod.obtainIMCmd": "/usr/local/bin/im-select",
-    "vim.autoSwitchInputMethod.switchIMCmd": "/usr/local/bin/im-select {im}",
-    "vim.sneak": true,
-    "vim.handleKeys": {
-        "<C-d>": false,
-        "<D-d>": false
+  // Place your settings in this file to overwrite the default settings
+  "explorer.openEditors.visible": 0,
+  "vim.enableNeovim": true,
+  // Controls the font family.
+  "editor.fontFamily": "Dank Mono",
+  // Controls the line height. Use 0 to compute the lineHeight from the fontSize.
+  // Controls if file decorations should use badges.
+  "explorer.decorations.badges": false,
+  "prettier.semi": false,
+  "prettier.singleQuote": true,
+  // "prettier.printWidth": 190,
+  "debug.toolBarLocation": "floating",
+  "editor.autoIndent": "keep",
+  "editor.codeLens": false,
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorStyle": "line",
+  "editor.fontSize": 17,
+  "editor.fontLigatures": true,
+  "editor.formatOnType": false,
+  "editor.letterSpacing": 0.5,
+  "editor.lineHeight": 25,
+  "files.autoSaveDelay": 1500,
+  "files.autoSave": "afterDelay",
+  "search.showLineNumbers": true,
+  "workbench.colorCustomizations": {},
+  "vim.useCtrlKeys": true,
+  "vim.autoSwitchInputMethod.enable": true,
+  "vim.autoSwitchInputMethod.defaultIM": "com.apple.keylayout.US",
+  "vim.autoSwitchInputMethod.obtainIMCmd": "/usr/local/bin/im-select",
+  "vim.autoSwitchInputMethod.switchIMCmd": "/usr/local/bin/im-select {im}",
+  "vim.sneak": true,
+  "vim.handleKeys": {
+    "<C-d>": false,
+    "<D-d>": false
+  },
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.rendererType": "dom",
+  "terminal.integrated.shell.osx": "zsh",
+  "terminal.integrated.scrollback": 3000,
+  "editor.tabSize": 2,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["A", "A"],
+      "after": ["<Esc>", "A"]
     },
-    "terminal.integrated.fontSize": 16,
-    "terminal.integrated.shell.osx": "zsh",
-    "editor.formatOnSave": true,
-    "editor.fontLigatures": true,
-    "editor.tabSize": 2,
-    "vim.insertModeKeyBindings": [
-        {
-            "before": [
-                "A",
-                "A"
-            ],
-            "after": [
-                "<Esc>",
-                "A"
-            ]
-        },
-        {
-            "before": [
-                "I",
-                "I"
-            ],
-            "after": [
-                "<Esc>",
-                "I"
-            ]
-        },
-        {
-            "before": [
-                "ctrl+shift+d"
-            ],
-            "after": [
-                "<Esc>",
-                "h",
-                "i"
-            ]
-        },
-        {
-            "before": [
-                "S",
-                "S"
-            ],
-            "after": [
-                "<Esc>",
-                "S"
-            ]
-        },
-        {
-            "before": [
-                "C",
-                "C"
-            ],
-            "after": [
-                "<Esc>",
-                "l",
-                "c",
-                "a",
-                "w"
-            ]
-        },
-        {
-            "before": [
-                "P",
-                "P"
-            ],
-            "after": [
-                "<Esc>",
-                "p",
-                "i"
-            ]
-        },
-        {
-            "before": [
-                "U",
-                "U"
-            ],
-            "after": [
-                "<Esc>",
-                "u",
-                "i"
-            ]
-        },
-        {
-            "before": [
-                "L",
-                "L"
-            ],
-            "after": [
-                "<Esc>",
-                "h",
-                "g",
-                "~",
-                "i",
-                "w",
-                "e",
-                "a"
-            ]
-        },
-        {
-            "before": [
-                "j",
-                "j"
-            ],
-            "after": [
-                "<Esc>"
-            ]
-        },
-        {
-            "before": [
-                "ctrl+[",
-                "["
-            ],
-            "after": [
-                "<Esc>"
-            ]
-        },
-        {
-            "before": [
-                "ctrl+k",
-                "ctrl+p"
-            ],
-            "after": [
-                "<Esc>",
-                "ctrl+k",
-                "ctrl+p",
-                "i"
-            ]
-        }
-    ],
-    "vim.insertModeKeyBindingsNonRecursive": [],
-    "editor.smoothScrolling": false,
-    "terminal.integrated.commandsToSkipShell": [
-        "workbench.action.quickOpen",
-        "workbench.action.openEditorAtIndex1",
-        "workbench.action.openEditorAtIndex2",
-        "editor.action.outdentLines",
-        "workbench.action.openEditorAtIndex3",
-        "workbench.action.openEditorAtIndex4",
-        "workbench.action.showCommands",
-        "workbench.action.terminal.clear",
-        "workbench.action.terminal.copySelection",
-        "workbench.action.terminal.focus",
-        "workbench.action.terminal.focusNext",
-        "workbench.action.terminal.focusPrevious",
-        "workbench.action.terminal.kill",
-        "workbench.action.terminal.new",
-        "workbench.action.terminal.paste",
-        "workbench.action.terminal.runSelectedText",
-        "workbench.action.terminal.scrollDown",
-        "workbench.action.terminal.scrollDownPage",
-        "workbench.action.terminal.scrollUp",
-        "workbench.action.terminal.scrollUpPage",
-        "workbench.action.terminal.toggleTerminal"
-    ],
-    //standard settings
-    "javascript.validate.enable": false,
-    "standard._legacyModuleResolve": true,
-    "standard.validate": [
-        "javascript",
-        "javascriptreact",
-        {
-            "language": "html",
-            "autoFix": true
-        }
-    ],
-    "standard.options": {
-        "plugins": [
-            "html"
-        ]
+    {
+      "before": ["I", "I"],
+      "after": ["<Esc>", "I"]
     },
-    "files.associations": {
-        "*.vue": "html"
+    {
+      "before": ["ctrl+shift+d"],
+      "after": ["<Esc>", "h", "i"]
     },
-    "window.zoomLevel": -1,
-    "window.enableMenuBarMnemonics": false,
-    "vim.leader": "<space>",
-    "standard.autoFixOnSave": true,
-    "workbench.activityBar.visible": false,
-    "terminal.integrated.shell.windows": "C:\\WINDOWS\\SysWOW64\\cmd.exe",
-    "workbench.startupEditor": "",
-    "vim.disableAnnoyingNeovimMessage": true,
-    "editor.minimap.enabled": false,
-    "vim.disableExtension": false,
-    "git.ignoreMissingGitWarning": true,
-    "workbench.colorTheme": "Material Theme",
-    "materialTheme.fixIconsRunning": false,
-    "workbench.iconTheme": "eq-material-theme-icons",
-    "breadcrumbs.enabled": false,
+    {
+      "before": ["S", "S"],
+      "after": ["<Esc>", "S"]
+    },
+    {
+      "before": ["C", "C"],
+      "after": ["<Esc>", "l", "c", "a", "w"]
+    },
+    {
+      "before": ["P", "P"],
+      "after": ["<Esc>", "p", "i"]
+    },
+    {
+      "before": ["U", "U"],
+      "after": ["<Esc>", "u", "i"]
+    },
+    {
+      "before": ["L", "L"],
+      "after": ["<Esc>", "h", "g", "~", "i", "w", "e", "a"]
+    },
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    },
+    {
+      "before": ["ctrl+[", "["],
+      "after": ["<Esc>"]
+    },
+    {
+      "before": ["ctrl+k", "ctrl+p"],
+      "after": ["<Esc>", "ctrl+k", "ctrl+p", "i"]
+    }
+  ],
+  "vim.insertModeKeyBindingsNonRecursive": [],
+  "editor.smoothScrolling": false,
+  "terminal.integrated.commandsToSkipShell": [
+    "workbench.action.quickOpen",
+    "workbench.action.openEditorAtIndex1",
+    "workbench.action.openEditorAtIndex2",
+    "editor.action.outdentLines",
+    "workbench.action.openEditorAtIndex3",
+    "workbench.action.openEditorAtIndex4",
+    "workbench.action.showCommands",
+    "workbench.action.terminal.clear",
+    "workbench.action.terminal.copySelection",
+    "workbench.action.terminal.focus",
+    "workbench.action.terminal.focusNext",
+    "workbench.action.terminal.focusPrevious",
+    "workbench.action.terminal.kill",
+    "workbench.action.terminal.new",
+    "workbench.action.terminal.paste",
+    "workbench.action.terminal.runSelectedText",
+    "workbench.action.terminal.scrollDown",
+    "workbench.action.terminal.scrollDownPage",
+    "workbench.action.terminal.scrollUp",
+    "workbench.action.terminal.scrollUpPage",
+    "workbench.action.terminal.toggleTerminal"
+  ],
+  //standard settings
+  "javascript.validate.enable": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.fixAll.eslint": false
+  },
+  "editor.formatOnSave": true,
+  "files.associations": {
+    "*.vue": "html"
+  },
+  "window.zoomLevel": -1,
+  "window.enableMenuBarMnemonics": false,
+  "vim.leader": "<space>",
+  "editor.formatOnPaste": true,
+  "standard.autoFixOnSave": true,
+  "workbench.activityBar.visible": true,
+  "editor.minimap.enabled": false,
+  "vim.disableExtension": false,
+  "git.ignoreMissingGitWarning": true,
+  "workbench.iconTheme": "eq-material-theme-icons",
+  "breadcrumbs.enabled": true,
+  "workbench.colorTheme": "Pacific",
+  "workbench.sideBar.location": "left",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // "[javascript]": {
+  //     "editor.defaultFormatter": "bysabi.prettier-vscode-standard"
+  // },
+  // "[javascriptreact]": {
+  //     "editor.formatOnSave": false,
+  //     "editor.defaultFormatter": "bysabi.prettier-vscode-standard"
+  // },
+  "vim.sneakUseIgnorecaseAndSmartcase": true,
+  "vim.neovimPath": "/usr/local/Cellar/neovim/0.4.2/bin/nvim",
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.renderControlCharacters": true,
+  "editor.foldingStrategy": "indentation",
+  "vim.foldfix": true,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "diffEditor.ignoreTrimWhitespace": true,
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.renameOnType": false,
+  "zenMode.hideStatusBar": false,
+  "zenMode.restore": true,
+  "[xml]": {
+    "editor.defaultFormatter": "DotJoshJohnson.xml"
+  },
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/css"
+    }
+  ]
 }

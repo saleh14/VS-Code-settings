@@ -6,6 +6,20 @@
     "when": "editorTextFocus"
   },
   {
+    "key": "ctrl+k ctrl+o",
+    "command": "workbench.action.files.openLocalFileFolder"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "workbench.action.navigateForward",
+    "when": "editorTextFocus  && vim.mode !='Insert'"
+  },
+  {
+    "key": "ctrl+o",
+    "command": "workbench.action.navigateBack",
+    "when": "editorTextFocus  && vim.mode !='Insert'"
+  },
+  {
     "key": "ctrl+h",
     "command": "extension.vim_backspace",
     "when": "editorTextFocus && !inDebugRepl"
